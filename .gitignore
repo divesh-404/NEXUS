@@ -1,0 +1,52 @@
+# Secrets and local env
+.env
+.env.*
+!.env.example
+*.pem
+secrets/
+
+# Agent learning artifacts (local only — never push)
+NEXUS_AGENT_GUIDE.md
+PROGRESS.md
+AGENT_STATE.md
+LEARNING_LOG.md
+learning/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# Java / Maven
+target/
+*.class
+*.jar
+!.mvn/wrapper/maven-wrapper.jar
+
+# Node (if any tooling appears later)
+node_modules/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Docker / Terraform local state
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+crash.log
