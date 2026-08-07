@@ -6,7 +6,7 @@ Built phase-by-phase as a learning-first distributed-systems project (FastAPI ga
 
 ## Status
 
-**Phase 1 code complete** — local `GET /health` works with correlation-ID JSON logs. Docker image build and Render deploy pending (start Docker Desktop, then deploy yourself).
+**Phase 1 complete** — live API: https://nexus-api-gateway-daz8.onrender.com (`/health`, `/docs`).
 
 ## Quick start (local)
 
