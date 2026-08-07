@@ -1,0 +1,19 @@
+# Render Blueprint — NEXUS API Gateway (Phase 1)
+# Divesh connects this repo in the Render dashboard and applies the blueprint.
+# Agent never runs the deploy.
+
+services:
+  - type: web
+    name: nexus-api-gateway
+    runtime: docker
+    plan: free
+    rootDir: services/api-gateway
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: LOG_LEVEL
+        value: INFO
+      - key: APP_NAME
+        value: nexus-api-gateway
