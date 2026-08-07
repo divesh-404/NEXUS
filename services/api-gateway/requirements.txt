@@ -1,0 +1,24 @@
+# NEXUS api-gateway — Phase 1 runtime deps (Python 3.13)
+# Direct deps (why each exists — see learning/files/.../requirements.md)
+fastapi==0.141.1
+uvicorn[standard]==0.52.1
+pydantic-settings==2.15.0
+python-dotenv==1.2.2
+
+# Pinned transitive set from this machine's install (reproducible builds)
+annotated-doc==0.0.5
+annotated-types==0.8.0
+anyio==4.14.2
+click==8.4.2
+colorama==0.4.6
+h11==0.16.0
+httptools==0.8.0
+idna==3.18
+pydantic==2.13.4
+pydantic_core==2.46.4
+PyYAML==6.0.3
+starlette==1.4.1
+typing-inspection==0.4.2
+typing_extensions==4.16.0
+watchfiles==1.2.0
+websockets==17.0.1
